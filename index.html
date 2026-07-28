@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Developing DEI Strategies that Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<div class="root">
+
+  <nav class="nav">
+    <div class="nav-mark"></div>
+    <div class="nav-links">
+      <a href="#summary">Executive Summary</a>
+      <a href="#background">Background</a>
+      <a href="#gaps">Identify Gaps</a>
+      <a href="#drivers">Find Drivers</a>
+      <a href="#plans">Develop Plans</a>
+      <a href="#goals">Set Goals</a>
+      <a href="#wrap">Wrapping Up</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow indigo">[ INSIGHTS ]</div>
+    <h1 class="hero-headline">Developing DEI Strategies that Work</h1>
+    <div class="hero-meta">
+      <span>SEPTEMBER 2023</span>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-hint-line"></div>
+      SCROLL — A RIGOROUS APPROACH TO DEI
+    </div>
+  </header>
+
+  <section id="summary" class="section section-narrow section-hairline-bottom">
+    <div class="section-tag-row">
+      <span class="section-index">[ 01 ]</span>
+      <span class="section-kicker">[ Summary ]</span>
+    </div>
+    <h2 class="section-title">Executive Summary</h2>
+    <div class="body-copy">
+      <p>Despite increases in education levels among racially diverse and ethnic minorities, the lack of diversity in organizations remains stubbornly persistent. In the wake of 2020's racial reckoning in the United States, many organizations increased their commitment to improving Diversity, Equity, and Inclusion (DEI). Much of this increased investment, however, was spent on "random acts of diversity" rather than on actions likely to improve outcomes. Before putting new programs, policies, or practices in place, organizations need to take the same rigorous approach they would for any other critical business initiative.</p>
+    </div>
+  </section>
+
+  <section id="background" class="section section-ash">
+    <div class="section-inner">
+      <div class="section-tag-row">
+        <span class="section-index">[ 02 ]</span>
+        <span class="section-kicker">[ Context ]</span>
+      </div>
+      <h2 class="section-title">Background</h2>
+      <div class="body-copy" style="margin-bottom:40px">
+        <p>Diversity in the workplace has seen limited progress over the past few decades. In their book <i><u>Getting to Diversity</u></i>, Frank Dobbin and Alexandra Kalev highlight limited increases in diversity in American workplaces from the 1980s to the present. They find that roughly 17% of working white men are managers, a share that's remained more or less steady since the Equal Employment Opportunity Commission (EEOC) began collecting data. More Black and Hispanic women are managers today than they were in the mid-1980s; at the current rate of change, it would take nearly 100 years for Hispanic women and 200 years for Black women to catch up to white men. Black and Hispanic men saw no change in their share of managers from 1985 to 2018.</p>
+      </div>
+
+      <div class="stats-grid" style="margin-bottom:48px">
+        <div class="stat-card" data-target="17" data-suffix="%">
+          <div class="stat-display">0%</div>
+          <div>
+            <div class="stat-label">Of working white men are managers</div>
+            <div class="stat-sub">Steady since the EEOC began collecting data</div>
+          </div>
+        </div>
+        <div class="stat-card" data-static="true">
+          <div class="stat-display">5–6%</div>
+          <div>
+            <div class="stat-label">Black and Hispanic women are managers</div>
+            <div class="stat-sub">100–200 years to reach parity with white men at the current pace</div>
+          </div>
+        </div>
+        <div class="stat-card" data-static="true">
+          <div class="stat-display" style="font-size:36px">$7.5B→$15B</div>
+          <div>
+            <div class="stat-label">Global DEI spending, 2020 to 2026</div>
+            <div class="stat-sub">Global DEI Spending Projections<sup style="font-size:10px;color:#007010;margin-left:1px">2</sup></div>
+          </div>
+        </div>
+        <div class="stat-card" data-target="76" data-suffix="%">
+          <div class="stat-display">0%</div>
+          <div>
+            <div class="stat-label"><br><br>Of organizations had no D&amp;I goals</div>
+          </div>
+          <div class="stat-sub">2020 Bersin study<sup style="font-size:10px;color:#007010;margin-left:1px">6</sup></div>
+        </div>
+      </div>
+
+      <div class="body-copy" style="margin-bottom:32px">
+        <p>The lack of progress in workplace diversity is not due to a lack of effort. Global DEI spending was estimated at $7.5B in 2020 and is expected to double by 2026. However,&nbsp;many standard DEI programs simply aren't effective<sup style="font-size:10px;color:#007010;margin-left:1px">1</sup>, as evidenced by the relative lack of progress. Ineffective spending on DEI programs often falls under what we at <i>Organization</i> call "random acts of diversity." These acts result from well-meaning organizations pursuing very visible actions to demonstrate their commitment to DEI. However, these solutions rarely address an organization's specific gaps and root causes, which means outcomes are unlikely to change.</p>
+        <p><i>Organization</i> has spent 20 years addressing DEI in the corporate world. We've worked with hundreds of organizations to improve their DEI outcomes, and we've directly accelerated the careers of over 10,000 Black, Hispanic, and Native American individuals. Based on our experience, we recommend organizations approach DEI<sup style="font-size:10px;color:#007010;margin-left:1px">3</sup>&nbsp;strategy the way they would approach any other critical business initiative.</p>
+      </div>
+
+      <div class="framework-grid" style="margin-bottom:40px">
+        <div class="framework-line"></div>
+        <div class="framework-step" style="background:var(--ash)">
+          <div class="framework-num">1</div>
+          <h3>Identify gaps that exist</h3>
+          <p>Map current-state representation against where the organization ought to be.</p>
+        </div>
+        <div class="framework-step" style="background:var(--ash)">
+          <div class="framework-num">2</div>
+          <h3>Find critical drivers, diagnose root causes</h3>
+          <p>Isolate the highest-leverage driver behind each gap, then dig to its root.</p>
+        </div>
+        <div class="framework-step" style="background:var(--ash)">
+          <div class="framework-num">3</div>
+          <h3>Develop plans to address root causes</h3>
+          <p>Iterative, product-management-style plans with clear outcome and interim metrics.</p>
+        </div>
+        <div class="framework-step" style="background:var(--ash)">
+          <div class="framework-num">4</div>
+          <h3>Set goals and accountability</h3>
+          <p>Goals as an output of strategy, not an input — with clear owners at every level.</p>
+        </div>
+      </div>
+
+      <div class="body-copy" style="margin-bottom:24px">
+        <p>This approach should feel familiar to every senior business leader. A similar framework is proposed in nearly every business strategy or problem-solving text. Rigorously developed plans with goals<sup style="font-size:10px;color:#007010;margin-left:1px">4</sup> are among the few consistent approaches<sup style="font-size:10px;color:#007010;margin-left:1px">5</sup> to making progress on DEI. Yet despite the evidence, a 2020 Bersin study found 76% of organizations had no diversity or inclusion goals.</p>
+        <p>Organizations tend to avoid rigorously developing their DEI strategy for a variety of reasons:</p>
+      </div>
+
+      <ul class="pitfall-list" style="margin-bottom:32px">
+        <li>Lack of real commitment to DEI</li>
+        <li>Pressure from stakeholders (e.g., employees, customers, activists) to take visible action on DEI</li>
+        <li>Strategy or problem-solving skills gap on DEI teams</li>
+        <li>DEI skills gap among business leaders</li>
+        <li>Profound discomfort when talking about race to address root causes</li>
+        <li>Well-intentioned leaders are ill-equipped to deal with pushback from employees on DEI goals and initiatives</li>
+        <li>Resistance to change the corporate practices that would lead to better DEI outcomes</li>
+      </ul>
+
+      <div class="body-copy">
+        <p>Regardless of the reasons organizations do not engage in the rigorous strategy development DEI requires, we find that when it happens, results inevitably follow. <i>Organization</i> developed the <i>Equity Certification Program (ECP)</i> with the framework above at its core. As part of the certification process, participating organizations, with <i>Organization's</i> guidance and support, assess their current state, identify root causes of gaps, and develop plans with goals and accountability.</p>
+        <p>After just one year in the <i>Equity Certification Program</i>, the 11 partners that completed Certification Assessments increased Black representation across nearly every level of their organizations, demonstrating what is possible with a rigorous approach. These organizations prove that progress on DEI can be achieved, and can happen quickly. Our partner organizations honed in on their specific problems and root causes rather than adopting common practices and hoping outcomes would change.</p>
+        <p>While the approach to developing rigorous DEI strategies that work is straightforward, it certainly isn't easy. There are pitfalls at each stage. Lack of a coherent framework, or any derailment along the way, leads many organizations to succumb to performative "random acts of diversity" rather than persevere with the hard work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gaps" class="section section-narrow section-hairline-bottom">
+    <div class="section-tag-row">
+      <span class="section-index">[ 03 ]</span>
+      <span class="section-kicker">[ Step 1 ]</span>
+    </div>
+    <h2 class="section-title">Identify Gaps That Exist</h2>
+    <div class="body-copy" style="margin-bottom:32px">
+      <p>The first step in setting a rigorous DEI strategy is identifying the gaps between an organization's current state and where it ought to be. We advise organizations to start by looking at the demographic makeup of their workforce by level. For larger or more complex organizations, further drilling down by business unit, job type, or location can also be helpful. Inevitably, the data will show where People of Color (POC), which <i>Organization</i> defines as Black, Hispanic/Latino, and Native American, are held back in the organization. This workforce representation analysis shows where the largest gaps are, which allows prioritization of the areas of greatest opportunity.</p>
+      <p>When looking at aggregated data from EEO-1 filings (private employers with 100+ employees and federal contractors with 50+), representation among POC shrinks with each step up the organizational hierarchy. Decreasing diversity further up the corporate ladder is a self-reinforcing systems issue that can only be addressed through systemic change<sup style="font-size:10px;color:#007010;margin-left:1px">7</sup>.</p>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-head">
+        <h3 class="chart-title">Representation of People of Color</h3>
+        <span class="chart-sub">Aggregated 2020 EEO-1 Reports</span>
+      </div>
+      <div class="chart-legend">
+        <span class="chart-legend-item"><span class="chart-legend-swatch" style="background:#433787"></span><span>Black</span></span>
+        <span class="chart-legend-item"><span class="chart-legend-swatch" style="background:#007010"></span><span>Hispanic</span></span>
+        <span class="chart-legend-item"><span class="chart-legend-swatch" style="background:#6c7a79"></span><span>Native American</span></span>
+      </div>
+      <div class="chart-svg-wrap">
+        <svg id="rep-chart-svg" class="chart-svg"></svg>
+      </div>
+      <p class="chart-note">Native American representation sits well under 1% at every level, so the value is shown as a label rather than a bar too small to read at this scale.</p>
+    </div>
+
+    <div class="body-copy">
+      <p>From this data, it's clear that the largest gaps in workforce representation are in middle and senior management. Companies need to create a similar view of their own organization, with greater granularity, to determine where their specific gaps are.</p>
+    </div>
+  </section>
+
+  <section id="drivers" class="section section-ash">
+    <div class="section-inner">
+      <div class="section-tag-row">
+        <span class="section-index">[ 04 ]</span>
+        <span class="section-kicker">[ Step 2 ]</span>
+      </div>
+      <h2 class="section-title">Find Critical Drivers and Diagnose Root Causes</h2>
+      <div class="body-copy" style="margin-bottom:28px">
+        <p>Once organizations identify and prioritize DEI gaps to address, they need to find the critical drivers of those gaps and identify root causes. This often involves multiple additional layers of analysis. We see this as another pitfall that drives organizations to stop early or take shortcuts. Failure to identify the highest-leverage drivers leads organizations to focus on areas that may not move the needle. Poor root cause analysis leaves executives poorly informed about DEI challenges. Both lead to DEI initiatives that don't improve outcomes.</p>
+        <p>An organizing framework for finding critical drivers and diagnosing root causes:</p>
+      </div>
+
+      <div class="driver-card">
+        <div style="margin:0;font-size:14px;line-height:1.8;color:var(--ink);display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">1.</span><span>Create a set of potential drivers of the gap that can be analyzed independently and cover all feasible causes</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">2.</span><span>Analyze each driver to determine if it produced the observed gap</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">3.</span><span>Repeat until key drivers are identified</span></div>
+        </div>
+      </div>
+
+      <div class="example-panel">
+        <span class="example-label">Running Example</span>
+        <p>Say an organization identifies a large gap in Black representation at Senior Management, as many of our <i>ECP</i> partners do. One potential set of top-level drivers:</p>
+        <div style="margin:0 0 14px;font-size:14px;line-height:1.7;color:var(--ink);display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">1.</span><span>Black talent is <u>less likely to be hired</u> into Senior Management</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">2.</span><span>Black talent is <u>less likely to be promoted</u> to Senior Management</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">3.</span><span>Black talent is <u>more likely to leave</u> the company from Senior Management roles</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">4.</span><span>Black talent is <u>underrepresented</u> at levels below Senior Management</span></div>
+        </div>
+        <p>This hiring, promotion, and attrition structure applies to the top level of most representation gaps observed in an organization. From here, analyze the data behind each driver. Every statement will be true to some degree for most organizations, so the point is to find the area(s) that, if improved, would have the largest impact on outcomes.</p>
+        <p>Say the data shows the share of Black hires in Senior Management is 5%, against a 13% US labor market benchmark. We find that Black talent has lower promotion rates, higher attrition, and lower representation at junior levels; however, these differences are not as great as the hiring gap. Improving hiring practices is the highest-leverage driver.</p>
+      </div>
+
+      <div class="body-copy" style="margin-bottom:20px">
+        <p>Many companies conducting DEI analysis stop at this first step, but taking the analysis deeper to uncover root causes is critical to truly understanding and solving DEI challenges. Organizations need to resist the urge to begin solutioning immediately after identifying a problem.</p>
+      </div>
+
+      <div class="example-panel">
+        <span class="example-label">Running Example, Continued</span>
+        <p>Having determined that Black talent is less likely to be hired into Senior Management, the next question is why. A deeper set of potential drivers:</p>
+        <div style="margin:0 0 14px;font-size:14px;line-height:1.7;color:var(--ink);display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">1.</span><span>Black talent is less likely to <u>be in equivalent roles</u> at other companies</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">2.</span><span>Black talent is less likely to <u>apply</u> to Senior Management roles</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">3.</span><span>Black talent is less likely to <u>be interviewed</u> for Senior Management roles</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">4.</span><span>Black talent is less likely to <u>receive an offer</u> for Senior Management roles</span></div>
+          <div style="display:flex;gap:10px"><span style="font-weight:700;color:#0b4a1e;min-width:1.4em">5.</span><span>Black talent is less likely to <u>accept an offer</u> for Senior Management roles</span></div>
+        </div>
+        <p>Say analysis of this deeper set shows that increasing offer <i>acceptance</i> rates would have the greatest impact on outcomes. The next step is to understand the root cause of Black talent accepting offers at lower rates. It's tempting here to treat a symptom rather than the root cause. An organization might go the expedient route and raise base salaries or signing bonuses for prospective Black hires. Unless there's a systemic gap in the offers to Black candidates versus their white counterparts, that's a symptom fix: Black candidates need to be offered greater compensation to offset an underlying root cause of preferring not to join the organization in the first place.</p>
+      </div>
+
+      <div class="body-copy">
+        <p>This work is uncomfortable, which is why many organizations don't engage in it. Additionally, organizations are often led by white men, who must face hard truths in order to implement effective changes. An example of hard truths would be the way POC perceive an organization from the outside versus how they experience it once they're on the inside. These gaps in perception and experience (where the real root causes of DEI gaps come from) can only be unearthed through trust, conversation, and a demonstrated willingness to change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans" class="section section-narrow section-hairline-bottom">
+    <div class="section-tag-row">
+      <span class="section-index">[ 05 ]</span>
+      <span class="section-kicker">[ Step 3 ]</span>
+    </div>
+    <h2 class="section-title">Develop Plans to Address Root Causes</h2>
+    <div class="body-copy" style="margin-bottom:28px">
+      <p>Once the root causes for critical drivers are identified, organizations should develop plans for addressing them. These plans should be flexible and adaptable; DEI challenges and the implementation of solutions are complex. The approach to solving them should look like product management: iterative and adaptable but laser-focused on clearly defined outcomes.</p>
+      <p>Good product management demands clarity of ownership and defines what success looks like, while enabling broad latitude in achieving it. Diversity task forces<sup style="font-size:10px;color:#007010;margin-left:1px">8</sup>, teams brought together to solve specific, prioritized DEI problems, have had proven success. These task forces should be given clarity about which root cause they're solving for, and a clear set of constraints to operate within, so they can pursue solutions freely inside well-established bounds.<br><br>Well-developed plans should not only have outcome metrics but also interim measures to determine if the current path is working effectively. Outcome metrics are what the organization ultimately cares about but tend to be absent in DEI measurement plans. Too often, organizations will focus on metrics related to a specific part of the organization rather than prioritize overall outcomes. In our running example above, the appropriate outcome measurements is the share of Black Senior Management hires.&nbsp;</p>
+    </div>
+
+    <div class="model-grid" style="margin-bottom:28px">
+      <div class="model-card">
+        <div class="model-title">Outcome Metrics</div>
+        <ul>
+          <li>What the organization ultimately cares about</li>
+          <li>Too often absent from DEI measurement plans</li>
+          <li>Requires looking at the entire system, not just one team's piece of it</li>
+          <li>e.g., share of Black Senior Management hires — not just diversity of applications</li>
+        </ul>
+      </div>
+      <div class="model-card">
+        <div class="model-title">Interim Measures</div>
+        <ul>
+          <li>Show whether the current path is working before outcomes fully manifest</li>
+          <li>Outcome metrics can take significant time to move</li>
+          <li>Should reflect whether the underlying process is changing as intended</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="body-copy" style="margin-bottom:24px">
+      <p>Talent Acquisition teams will often argue they only "fully own" the diversity of applications. That may be functionally true, but making real progress on DEI means looking at the entire system, and that only happens when organizations hold themselves accountable for outcomes. The challenge with only looking at outcome metrics is that they can take significant time to manifest. Organizations need to find ways to understand if their approach is likely to have the intended effect on outcomes with intermediate measures. These metrics should show whether the process that produces the outcome is changing as intended.</p>
+    </div>
+
+    <div class="example-panel">
+      <span class="example-label">Running Example, Continued</span>
+      <p>Suppose we determined the root cause for low offer acceptance rates from Black candidates turns out to be a lack of belief that their work will be recognized and rewarded fairly. The task force working this problem trains interviewers and sets up a program ensuring every candidate meets a diverse panel of senior interviewers. An intermediate metric here could be prompting the candidate's recruiter to gauge the candidate's confidence that they would succeed in the role. Improvements in this area, alongside higher offer acceptance rates from Black candidates, should give confidence that the share of Black talent hired into Senior Management will also improve.</p>
+    </div>
+  </section>
+
+  <section id="goals" class="section section-ash">
+    <div class="section-inner">
+      <div class="section-tag-row">
+        <span class="section-index">[ 06 ]</span>
+        <span class="section-kicker">[ Step 4 ]</span>
+      </div>
+      <h2 class="section-title">Set Goals and Accountability</h2>
+      <div class="body-copy" style="margin-bottom:24px">
+        <p>Goals crystalize strategy and create focus for an organization. Empirical evidence demonstrates that goals have a positive effect on diversity<sup style="font-size:10px;color:#007010;margin-left:1px">4</sup> outcomes. There are two common pitfalls to avoid when setting DEI goals:</p>
+      </div>
+
+      <ul class="pitfall-list" style="margin-bottom:28px">
+        <li>Setting goals before developing your DEI strategy</li>
+        <li>Avoiding accountability for achieving DEI goals</li>
+      </ul>
+
+      <div class="body-copy" style="margin-bottom:36px">
+        <p>Goals should be set at the end of a strategy development cycle<sup style="font-size:10px;color:#007010;margin-left:1px">9</sup> as an output of the process. Many organizations treat goals as an input and attempt to devise strategies to meet those goals. This inverts the process and can lead to incoherent sets of actions aimed at hitting arbitrarily prescribed numbers.</p>
+        <p>Returning to the running example: what would happen if we simply identified the major gap (share of Black talent in Senior Management) and set a goal of bringing that share up to parity with the share of Black talent in the labor market? Certainly a clear and audacious goal, but how should the organization achieve it? Setting a goal before the root cause analysis, which sits at the heart of strategy, means organizations fail to solve the underlying problem. This ultimately creates new problems and sets organizations on a DEI goal treadmill they can never get off.</p>
+        <p>Individuals and teams can only be held accountable once a strategy is devised. Goals and accountability flow naturally from strategy. An area where companies frequently struggle is defining who should be accountable for which parts of the process. In our experience, a Chief Diversity Officer (CDO) should be accountable for leading the creation of an organization's diversity strategy. Various subgroups within the Human Capital and Diversity teams should be accountable for creating and executing initiatives that are part of the CDO's strategy and will enable the organization to achieve its diversity goals. Finally, managers and business leaders should be held accountable for achieving DEI goals within their groups. After all, these are the individuals who are directly responsible for the hiring, development, advancement, and day-to-day experience of people on their teams.</p>
+      </div>
+
+      <div class="next-grid" style="margin-bottom:36px">
+        <div>
+          <div class="tier-num">[ Owns the strategy ]</div>
+          <h3>Chief Diversity Officer</h3>
+          <p>Accountable for leading the creation of the organization's diversity strategy, inclusive of all four steps, and for monitoring implementation while reporting on outcomes.</p>
+        </div>
+        <div>
+          <div class="tier-num">[ Executes initiatives ]</div>
+          <h3>Human Capital &amp; Diversity Teams</h3>
+          <p>Groups accountable for creating and executing initiatives that are part of the CDO's strategy — diversity recruiting, training programs, and the like.</p>
+        </div>
+        <div>
+          <div class="tier-num">[ Owns day-to-day outcomes ]</div>
+          <h3>Managers &amp; Business Leaders</h3>
+          <p>Held accountable for achieving DEI goals within their groups, since they're directly responsible for hiring, development, advancement, and day-to-day experience.</p>
+        </div>
+      </div>
+
+      <div class="example-panel">
+        <span class="example-label">Running Example, Concluded</span>
+        <p>Increasing the offer acceptance rate of Black Senior Management candidates was determined to be high-leverage and worth focus. The likely root cause of lower offer acceptance rates: a belief among Black candidates that their work wouldn't be recognized or rewarded fairly. The organization can now reasonably set a goal of increasing Black candidates' offer acceptance rate to the level of white candidates. Executives hiring for Senior Management roles should be held accountable for the offer acceptance rate and given guidance by the DEI team. Recruiting teams should be held accountable for bringing in a diverse candidate slate for every role and for gathering candidate feedback on identified root causes. Finally, the Learning &amp; Development team should be held accountable for creating effective training for recruiters and hiring managers to help them better address candidate concerns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="wrap" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-tag-row">
+        <span class="section-index dark">[ 07 ]</span>
+        <span class="section-kicker darker">[ Conclusion ]</span>
+      </div>
+      <h2 class="section-title light">Wrapping Up</h2>
+      <div class="body-copy dark-copy" style="margin-bottom:40px">
+        <p>Developing effective DEI strategies requires the hard, rigorous work necessary in solving any other difficult business problem. Research, along with <i>Organization's</i> extensive work with clients through our <i>Equity Certification Program</i>, has proven the efficacy of a rigorous approach. Organizations fall into a variety of pitfalls: pursuing visible DEI activities to appease employees and stakeholders; discomfort with the conversations about race required to uncover root causes; and setting goals before strategy development. All of these pitfalls lead to "random acts of diversity" rather than a rigorous strategy — meaning the corporate world continues to fail in making meaningful progress on DEI while most corporate leaders remain uncomfortable leading on it.</p>
+        <p>Organizations that choose to engage in the difficult work, like the 70+ companies pursuing <i>Organization's Equity Certification Program,</i>&nbsp;will make progress on DEI, and their leaders will gain new clarity, confidence, and skill sets related to leading with DEI. They'll reap the benefits of diversity in their bottom line<sup style="font-size:10px;color:#85c093;margin-left:1px">10</sup> while attracting top talent who increasingly demand diversity<sup style="font-size:10px;color:#85c093;margin-left:1px">11</sup> in their workplaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sources" class="section section-ash" style="padding:56px 40px">
+    <div class="section-inner">
+      <div class="section-tag-row" style="margin-bottom:16px">
+        <span class="section-kicker">[ Sources ]</span>
+      </div>
+      <ul class="source-list">
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">01</span><a href="https://hbr.org/2016/07/why-diversity-programs-fail" target="_blank" rel="noopener">Harvard Business Review — Why Diversity Programs Fail</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">02</span><a href="https://www.prnewswire.com/news-releases/with-global-spending-projected-to-reach-15-4-billion-by-2026--diversity-equity--inclusion-takes-the-lead-role-in-the-creation-of-stronger-businesses-301413808.html" target="_blank" rel="noopener">PR Newswire — Global DEI spending projections through 2026</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">03</span><a href="https://impact.economist.com/perspectives/strategy-leadership/companies-must-treat-diverse-recruitment-any-other-strategic-growth-imperative" target="_blank" rel="noopener">Economist Impact — Treating diverse recruitment as a growth imperative</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">04</span><a href="https://www.nber.org/papers/w1346" target="_blank" rel="noopener">National Bureau of Economic Research — Working Paper 1346</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">05</span><a href="https://journals.sagepub.com/doi/10.1177/000312240607100404" target="_blank" rel="noopener">American Sociological Review — DOI 10.1177/000312240607100404</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">06</span><a href="https://ss-usa.s3.amazonaws.com/c/308463326/media/27436024f0b84dfd274918375735238/202102%20-%20DEI%20Report.pdf" target="_blank" rel="noopener">2020 Bersin DEI study</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">07</span><a href="https://futureforum.com/2021/06/15/moving-from-retrofit-to-redesign/" target="_blank" rel="noopener">Future Forum — Moving From Retrofit to Redesign</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">08</span><a href="https://scholar.harvard.edu/dobbin/publications/why-firms-need-diversity-managers-and-task-forces" target="_blank" rel="noopener">Frank Dobbin — Why Firms Need Diversity Managers and Task Forces</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">09</span><a href="https://www.strategy-business.com/blog/The-Trouble-with-Putting-Goals-Ahead-of-Strategy" target="_blank" rel="noopener">strategy+business — The Trouble With Putting Goals Ahead of Strategy</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">10</span><a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/why-diversity-matters" target="_blank" rel="noopener">McKinsey — Why Diversity Matters</a></li>
+        <li style="color:#09352e"><span class="source-tag" style="color:#6c7a79">11</span><a href="https://www.forbes.com/sites/theyec/2023/01/17/want-to-attract-top-talent-eight-lessons-to-take-with-you-through-2023/?sh=5d602cbb2602" target="_blank" rel="noopener">Forbes — Eight Lessons to Attract Top Talent</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-mark"><i>ORGANIZATION</i></div>
+        <div class="footer-tagline">Insights on building DEI strategy with the same rigor as any other critical business initiative.</div>
+      </div>
+      <div class="footer-note">[ Prototype · anonymized · portfolio use only ]</div>
+    </div>
+  </footer>
+
+</div>
+<script src="deireport.js"></script>
+</body>
+</html>

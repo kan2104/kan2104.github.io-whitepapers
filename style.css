@@ -37,13 +37,13 @@ a:hover { color: var(--pine); }
   color: var(--ink);
   background-color: var(--paper);
   background-image:
-    linear-gradient(rgba(224, 224, 224, 0.82), rgba(224, 224, 224, 0.82)),
+    linear-gradient(rgba(224, 224, 224, 0.55), rgba(224, 224, 224, 0.55)),
     var(--paper-texture);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
-  background-blend-mode: normal, overlay;
+  background-blend-mode: normal, multiply;
   line-height: 1.5;
   letter-spacing: 0.012em;
 }
@@ -154,7 +154,7 @@ i { font-style: italic; }
 .section-dark {
   background-color: var(--charcoal);
   background-image:
-    linear-gradient(rgba(41, 33, 30, 0.85), rgba(41, 33, 30, 0.85)),
+    linear-gradient(rgba(41, 33, 30, 0.5), rgba(41, 33, 30, 0.5)),
     var(--paper-texture);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
@@ -166,7 +166,7 @@ i { font-style: italic; }
 .section-ash {
   background-color: var(--ash);
   background-image:
-    linear-gradient(rgba(229, 229, 229, 0.82), rgba(229, 229, 229, 0.82)),
+    linear-gradient(rgba(229, 229, 229, 0.55), rgba(229, 229, 229, 0.55)),
     var(--paper-texture);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
@@ -268,7 +268,7 @@ i { font-style: italic; }
   padding: 56px 40px;
   background-color: var(--charcoal);
   background-image:
-    linear-gradient(rgba(41, 33, 30, 0.85), rgba(41, 33, 30, 0.85)),
+    linear-gradient(rgba(41, 33, 30, 0.5), rgba(41, 33, 30, 0.5)),
     var(--paper-texture);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;

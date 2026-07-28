@@ -35,15 +35,7 @@ a:hover { color: var(--pine); }
 .root {
   font-family: var(--denim);
   color: var(--ink);
-  background-color: var(--paper);
-  background-image:
-    linear-gradient(rgba(224, 224, 224, 0.55), rgba(224, 224, 224, 0.55)),
-    var(--paper-texture);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: auto, cover;
-  background-attachment: scroll, fixed;
-  background-blend-mode: normal, multiply;
+  background: var(--paper);
   line-height: 1.5;
   letter-spacing: 0.012em;
 }
@@ -98,6 +90,8 @@ i { font-style: italic; }
   padding: 100px 40px 64px;
   max-width: 1280px;
   margin: 0 auto;
+  background: var(--paper-texture) center / cover no-repeat fixed, var(--paper);
+  background-blend-mode: overlay;
 }
 .eyebrow {
   font-family: var(--cinetype);
@@ -147,32 +141,22 @@ i { font-style: italic; }
 .scroll-hint-line { width: 32px; height: 0.5px; background: var(--ink-soft); }
 
 /* Section shell */
-.section { padding: 64px 40px; }
+.section {
+  padding: 64px 40px;
+  background: var(--paper-texture) center / cover no-repeat fixed, var(--paper);
+  background-blend-mode: overlay;
+}
 .section-narrow { max-width: 1280px; margin: 0 auto; }
 .section-inner { max-width: 1280px; margin: 0 auto; }
 .section-hairline-bottom { box-shadow: 0 0.5px 0 0 var(--line) inset; }
 .section-dark {
-  background-color: var(--charcoal);
-  background-image:
-    linear-gradient(rgba(41, 33, 30, 0.5), rgba(41, 33, 30, 0.5)),
-    var(--paper-texture);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: auto, cover;
-  background-attachment: scroll, fixed;
-  background-blend-mode: normal, overlay;
+  background: var(--paper-texture) center / cover no-repeat fixed, var(--charcoal);
+  background-blend-mode: overlay;
   color: #f4f3f1;
 }
 .section-ash {
-  background-color: var(--ash);
-  background-image:
-    linear-gradient(rgba(229, 229, 229, 0.55), rgba(229, 229, 229, 0.55)),
-    var(--paper-texture);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: auto, cover;
-  background-attachment: scroll, fixed;
-  background-blend-mode: normal, overlay;
+    background: var(--paper-texture) center / cover no-repeat fixed, var(--ash);
+  background-blend-mode: overlay;
   box-shadow: 0 0.5px 0 0 var(--line) inset, 0 -0.5px 0 0 var(--line) inset;
 }
 
@@ -200,7 +184,11 @@ i { font-style: italic; }
 /* Numbers */
 .stats-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
 .stat-card {
-  background: var(--card);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    var(--paper-texture) center / cover no-repeat scroll,
+    var(--card);
+  background-blend-mode: normal, multiply;
   border-radius: 12px;
   box-shadow: 0 0 0 0.5px var(--line) inset;
   padding: 20px;
@@ -231,7 +219,14 @@ i { font-style: italic; }
 .pipeline-label { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
 
 .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-.model-card { background: var(--card); border-radius: 12px; box-shadow: 0 0 0 0.5px var(--line) inset; padding: 20px; }
+.model-card {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    var(--paper-texture) center / cover no-repeat scroll,
+    var(--card);
+  background-blend-mode: normal, multiply;
+  border-radius: 12px; box-shadow: 0 0 0 0.5px var(--line) inset; padding: 20px;
+}
 .model-title {
   font-family: var(--cinetype);
   font-size: 11px;
@@ -266,15 +261,8 @@ i { font-style: italic; }
 /* Footer */
 .footer {
   padding: 56px 40px;
-  background-color: var(--charcoal);
-  background-image:
-    linear-gradient(rgba(41, 33, 30, 0.5), rgba(41, 33, 30, 0.5)),
-    var(--paper-texture);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: auto, cover;
-  background-attachment: scroll, fixed;
-  background-blend-mode: normal, overlay;
+  background: var(--paper-texture) center / cover no-repeat fixed, var(--charcoal);
+  background-blend-mode: overlay;
   color: #a9a49e;
 }
 .footer-inner {
@@ -306,7 +294,11 @@ i { font-style: italic; }
 .framework-step p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
 
 .example-panel {
-  background: var(--card);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    var(--paper-texture) center / cover no-repeat scroll,
+    var(--card);
+  background-blend-mode: normal, multiply;
   border-radius: 12px;
   box-shadow: 0 0 0 0.5px var(--line) inset;
   padding: 24px 28px;
@@ -322,7 +314,11 @@ i { font-style: italic; }
 .example-panel ol:last-child, .example-panel ul:last-child { margin-bottom: 0; }
 
 .driver-card {
-  background: var(--ash);
+  background:
+    linear-gradient(rgba(229, 229, 229, 0.85), rgba(229, 229, 229, 0.85)),
+    var(--paper-texture) center / cover no-repeat scroll,
+    var(--ash);
+  background-blend-mode: normal, multiply;
   border-radius: 12px;
   box-shadow: 0 0 0 0.5px var(--line) inset;
   padding: 18px 22px;
@@ -346,7 +342,11 @@ i { font-style: italic; }
 .tier-num { font-family: var(--cinetype); font-size: 11px; letter-spacing: 0.15em; color: var(--indigo); margin-bottom: 10px; text-transform: uppercase; }
 
 .chart-card {
-  background: var(--card);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    var(--paper-texture) center / cover no-repeat scroll,
+    var(--card);
+  background-blend-mode: normal, multiply;
   border-radius: 12px;
   box-shadow: 0 0 0 0.5px var(--line) inset;
   padding: 28px 32px 20px;
@@ -375,4 +375,15 @@ i { font-style: italic; }
   .framework-grid { grid-template-columns: 1fr; }
   .hero-headline { font-size: 34px; }
   .section-title { font-size: 26px; }
+}
+
+/* Paper texture: fixed attachment is smooth on desktop but jittery/broken in iOS Safari, so scroll with it on small screens */
+@media (max-width: 768px) {
+  .hero,
+  .section,
+  .section-ash,
+  .section-dark,
+  .footer {
+    background-attachment: scroll;
+  }
 }

@@ -13,7 +13,7 @@
   --denim:'Inter',ui-sans-serif,system-ui,sans-serif;
   --cinetype:'JetBrains Mono',ui-monospace,monospace;
   --paper-texture: url('assets/Texturelabs_Paper_373L.jpg');
-  --paper-texture-alt: url('assets/Texturelabs_Paper_366L.jpg');
+  --paper-texture-alt: url('assets/Texturelabs_Paper_373L.jpg');
 }
 
 * { box-sizing: border-box; }

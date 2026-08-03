@@ -2,7 +2,7 @@
   'use strict';
 
   /* ---------------------------------------------------------------
-     EDIT ME: source data for the representation chart, straight from
+     EDIT ME: Source data for the representation chart, straight from
      the aggregated 2020 EEO-1 filings cited in the report.
      --------------------------------------------------------------- */
   var repData = [
@@ -82,7 +82,7 @@
         .data(ticks).join('line')
         .attr('x1', function (t) { return x(t); }).attr('x2', function (t) { return x(t); })
         .attr('y1', 0).attr('y2', H - margin.top - margin.bottom)
-        .attr('stroke', 'rgba(9,53,45,0.12)').attr('stroke-width', 1);
+        .attr('stroke', 'rgba(13,50,38,0.25)').attr('stroke-width', 1);
 
       g.append('g').selectAll('text.tick-label')
         .data(ticks).join('text')
@@ -92,7 +92,7 @@
         .attr('text-anchor', 'middle')
         .attr('font-family', "'JetBrains Mono', monospace")
         .attr('font-size', 10)
-        .attr('fill', 'var(--ink-soft)')
+        .attr('fill', '#0d3226')
         .text(function (t) { return t + '%'; });
 
       repData.forEach(function (row, ri) {
@@ -105,7 +105,7 @@
           .attr('font-family', "'Inter', sans-serif")
           .attr('font-weight', 500)
           .attr('font-size', 13)
-          .attr('fill', 'var(--ink)')
+          .attr('fill', '#0d3226')
           .text(row.level);
 
         groupKeys.forEach(function (key, gi) {
@@ -130,7 +130,7 @@
             .attr('y', y + barHeight - 3)
             .attr('font-family', "'JetBrains Mono', monospace")
             .attr('font-size', 11)
-            .attr('fill', 'var(--ink)')
+            .attr('fill', '#0d3226')
             .attr('opacity', 0)
             .text(val + '%');
 

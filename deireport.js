@@ -92,7 +92,7 @@
         .attr('text-anchor', 'middle')
         .attr('font-family', "'JetBrains Mono', monospace")
         .attr('font-size', 10)
-        .attr('fill', '#0d3226')
+        // .attr('fill', '#0d3226')
         .text(function (t) { return t + '%'; });
 
       repData.forEach(function (row, ri) {

@@ -331,6 +331,7 @@ i { font-style: italic; }
   box-shadow: 0 0.5px 0 0 var(--line) inset;
   font-size: 14px; color: var(--ink); position: relative;
 }
+.dark-copy.pitfall-list li { color: #d8d4ce; }
 .pitfall-list li::before {
   content: "";
   position: absolute; left: 0; top: 21px;

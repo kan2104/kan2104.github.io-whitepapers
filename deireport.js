@@ -82,7 +82,7 @@
         .data(ticks).join('line')
         .attr('x1', function (t) { return x(t); }).attr('x2', function (t) { return x(t); })
         .attr('y1', 0).attr('y2', H - margin.top - margin.bottom)
-        .attr('stroke', 'rgba(13,50,38,0.25)').attr('stroke-width', 1);
+        .attr('stroke', 'rgba(9,53,45,0.12)').attr('stroke-width', 1);
 
       g.append('g').selectAll('text.tick-label')
         .data(ticks).join('text')
@@ -92,7 +92,7 @@
         .attr('text-anchor', 'middle')
         .attr('font-family', "'JetBrains Mono', monospace")
         .attr('font-size', 10)
-        // .attr('fill', '#0d3226')
+        .attr('fill', '#var(--ink-soft)')
         .text(function (t) { return t + '%'; });
 
       repData.forEach(function (row, ri) {
@@ -105,7 +105,7 @@
           .attr('font-family', "'Inter', sans-serif")
           .attr('font-weight', 500)
           .attr('font-size', 13)
-          .attr('fill', '#0d3226')
+          .attr('fill', 'var(--ink)')
           .text(row.level);
 
         groupKeys.forEach(function (key, gi) {
